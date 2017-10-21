@@ -2,16 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {HashRouter} from 'react-router-dom';
 require('./sass/styles');
-import { Apple } from './components/Apple';
-import tasks from './data/tasksList';
+import { App } from './components/App';
+//import tasks from './data/tasksList';
+import {data} from './data/data';
 
-const root = (
-  <HashRouter>
-    <Apple tasks={tasks}/>
-  </HashRouter>
-	);
+// const root = (
+//   <HashRouter>
+//     <Apple tasks={data}/>
+//   </HashRouter>
+// 	);
 
-ReactDOM.render(root,
+ReactDOM.render(<App data={data}/>,
 document.querySelector("#app"));
 
 
