@@ -1,5 +1,6 @@
 import React from 'react';
 import createReactClass from 'create-react-class';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 export const GoodsTable = createReactClass({
 	getInitialState(){
@@ -11,7 +12,6 @@ export const GoodsTable = createReactClass({
 		this.setState({
 			units: this.state.units + 4
 		})
-		console.log(this.props.data.length, this.state.units);
 	},
 	render(){
 		const {data} = this.props;
@@ -39,8 +39,14 @@ export const GoodsTable = createReactClass({
 			)
 		return (
 			<div className="units-wrapper">
+			<ReactCSSTransitionGroup
+			transitionName="fade-in"
+            transitionEnterTimeout={800}
+            transitionLeaveTimeout={300}
+            >
 			{goodsUnit}
-			<button className={data.length == this.state.units - 4 ? 'none' : ''} onClick={this.showMore}>Load more</button>
+			</ReactCSSTransitionGroup>
+			<button className={data.length == this.state.units ? 'none' : ''} onClick={this.showMore}>Load more</button>
 			</div>
 			)
 	}

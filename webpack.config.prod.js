@@ -3,7 +3,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HTMLwebpackPlugin = require('html-webpack-plugin');
 const UglyJS = require('uglify-js-plugin');
 const webpack = require('webpack');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+//const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const config = {
      entry: __dirname + '/dev/index.js',
@@ -42,9 +42,9 @@ const config = {
       debug: true,
       sourceMap: true // or false. True is not default for WP2
      }),
-        new BundleAnalyzerPlugin({
-       analyzerMode: 'static'
-     })
+     //    new BundleAnalyzerPlugin({
+     //   analyzerMode: 'static'
+     // })
     ],
     resolve: {
       extensions: ['.js','.jsx','.css', '.scss']

@@ -10,23 +10,23 @@ export const Footer = () =>
 		</p>
 		<ul>
 			<li>
-				<i class="fa fa-caret-right"></i>
+				<i className="fa fa-caret-right"></i>
 				<a href="#">Morbi tincidunt ante vitae lorem interdum</a>
 			</li>
 			<li>
-				<i class="fa fa-caret-right"></i>
+				<i className="fa fa-caret-right"></i>
 				<a href="#">Donec semper nulla est, ut ultricies</a>
 			</li>
 			<li>
-				<i class="fa fa-caret-right"></i>
+				<i className="fa fa-caret-right"></i>
 				<a href="#">Suspendisse ipsum lacus, ultricies nec</a>
 			</li>
 			<li>
-				<i class="fa fa-caret-right"></i>
+				<i className="fa fa-caret-right"></i>
 				<a href="#">Nam venenatis pellentesque congue</a>
 			</li>
 			<li>
-				<i class="fa fa-caret-right"></i>
+				<i className="fa fa-caret-right"></i>
 				<a href="#">Etiam eros tortor, tristique et</a>
 			</li>
 		</ul>
@@ -38,23 +38,23 @@ export const Footer = () =>
 		</p>
 		<ul>
 			<li>
-				<i class="fa fa-caret-right"></i>
+				<i className="fa fa-caret-right"></i>
 				<a href="#">Morbi tincidunt ante vitae lorem interdum</a>
 			</li>
 			<li>
-				<i class="fa fa-caret-right"></i>
+				<i className="fa fa-caret-right"></i>
 				<a href="#">Donec semper nulla est, ut ultricies</a>
 			</li>
 			<li>
-				<i class="fa fa-caret-right"></i>
+				<i className="fa fa-caret-right"></i>
 				<a href="#">Suspendisse ipsum lacus, ultricies nec</a>
 			</li>
 			<li>
-				<i class="fa fa-caret-right"></i>
+				<i className="fa fa-caret-right"></i>
 				<a href="#">Nam venenatis pellentesque congue</a>
 			</li>
 			<li>
-				<i class="fa fa-caret-right"></i>
+				<i className="fa fa-caret-right"></i>
 				<a href="#">Etiam eros tortor, tristique et</a>
 			</li>
 		</ul>
@@ -63,29 +63,30 @@ export const Footer = () =>
 		<h6>Store information</h6>
 		<ul>
 			<li>
-				<i class="fa fa-map-marker fa-2x"></i>
+				<i className="fa fa-map-marker fa-2x"></i>
 				<span> 
 				Morbi tincidunt ante vitae lorem 
 				</span>
 			</li>
 			<li>
-				<i class="fa fa-phone fa-2x"></i>
+				<i className="fa fa-phone fa-2x"></i>
 				<span> 
 				Donec semper nulla est, ut ultricies
 				</span>
 			</li>
 			<li>
-				<i class="fa fa-envelope-o fa-2x"></i>
+				<i className="fa fa-envelope-o fa-2x"></i>
 				<span> 
 				Suspendisse ipsum lacus, ultricies nec
 				</span>
 			</li>
 			<li>
-				<i class="fa fa-skype fa-2x"></i>
+				<i className="fa fa-skype fa-2x"></i>
 				<span> 
 				Nam venenatis pellentesque congue
 				</span>
 			</li>
 		</ul>
 	</div>
+	
 </footer>
