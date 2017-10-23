@@ -63,20 +63,28 @@ export const Footer = () =>
 		<h6>Store information</h6>
 		<ul>
 			<li>
-				<i class="fa fa-map-marker"></i>
-				<a href="#">Morbi tincidunt ante vitae lorem interdum</a>
+				<i class="fa fa-map-marker fa-2x"></i>
+				<span> 
+				Morbi tincidunt ante vitae lorem 
+				</span>
 			</li>
 			<li>
-				<i class="fa fa-phone"></i>
-				<a href="#">Donec semper nulla est, ut ultricies</a>
+				<i class="fa fa-phone fa-2x"></i>
+				<span> 
+				Donec semper nulla est, ut ultricies
+				</span>
 			</li>
 			<li>
-				<i class="fa fa-envelope-o"></i>
-				<a href="#">Suspendisse ipsum lacus, ultricies nec</a>
+				<i class="fa fa-envelope-o fa-2x"></i>
+				<span> 
+				Suspendisse ipsum lacus, ultricies nec
+				</span>
 			</li>
 			<li>
-				<i class="fa fa-skype"></i>
-				<a href="#">Nam venenatis pellentesque congue</a>
+				<i class="fa fa-skype fa-2x"></i>
+				<span> 
+				Nam venenatis pellentesque congue
+				</span>
 			</li>
 		</ul>
 	</div>

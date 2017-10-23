@@ -6,5 +6,5 @@ import {Footer} from './Footer';
 export const App = (props) => 
 	<div className="wrapper">
 	<GoodsTable {...props}/>
-	
+	<Footer/>
 	</div>

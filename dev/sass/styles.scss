@@ -1,5 +1,16 @@
 @import "normalize";
-@import "add-ones";
+
+ * {box-sizing: border-box;}   
+
+/* Breakpoints */
+$phone: 320px;
+$tablet: 480px;
+$tablet-plus: 640px; 
+$desktop: 835px;
+$desktop-plus: 960px;
+$desktop-max: 1250px;
+
+li {list-style: none;}
 
 body{
  font-family: 'Ubuntu', sans-serif;
@@ -10,9 +21,10 @@ body{
 .wrapper{
     max-width: $desktop-max;
     min-width: $phone;
-    margin: 0 auto;
+    margin: 20px auto;
+    padding: 0 4px;
     @media(min-width: $tablet){
-        padding: 0 38px;
+        padding: 0 38px 30px;
     }
 }
 
@@ -20,7 +32,7 @@ body{
 
 .units-wrapper {
     overflow: hidden;
-     padding: 35px 4px 0; 
+     padding: 35px 0 0; 
    }
 
  .unit {
@@ -149,3 +161,43 @@ body{
     outline: none;
     background: none;
 } 
+
+/* Footer */
+
+footer {
+    overflow: hidden;
+    padding: 75px 0 0;
+     & > div {
+      border: 1px solid #e5e5e5;
+      margin-bottom: 10px;
+      padding: 0 30px 55px; 
+      h6 {
+        font-family: Raleway;
+        font-size: 20px;
+        color: #333;
+        text-transform: uppercase;
+        margin: 46px 0 22px;
+      }
+       @media(min-width: $desktop){
+          width: 31.62%;
+          float: left;
+          &:first-child {margin-right: 2.56%;}
+          &:last-child {float: right;}
+       } 
+     }
+        i {color: #ec1111;}
+        li {padding: 9px 0;} 
+     .offers {
+                 
+        a {
+            color: #a5a4a4;
+            padding-left: 13px;
+    }
+     }
+     .info {
+        i {padding-top: 3px;}
+        span {padding-left: 9px;}
+     }
+  
+   }
+
