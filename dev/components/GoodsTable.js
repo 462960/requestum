@@ -19,6 +19,10 @@ export const GoodsTable = createReactClass({
 			<div key={i} className="unit">
 				<div className="unit-img">
 				<img src={unit.img} alt={unit.clothes}/>
+				<div className="unit-status">
+					<div className={unit.discountCost == null ? 'none' : ''}>sale</div>
+					<div className={unit.new ? '' : 'none'}>new</div>
+				</div>
 				</div>
 				<h6 className="unit-name">{unit.title}</h6>
 				<p className="unit-description">{unit.description}</p>
@@ -30,10 +34,7 @@ export const GoodsTable = createReactClass({
 					<a href="">add <span>to cart</span></a>
 					<a href="">view</a>
 				</div>
-				<div className="unit-status">
-					<div className={unit.discountCost == null ? 'none' : ''}>sale</div>
-					<div className={unit.new ? '' : 'none'}>new</div>
-				</div>
+				
 			</div>
 			)
 		return (

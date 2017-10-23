@@ -10,6 +10,7 @@ body{
 .wrapper{
     max-width: $desktop-max;
     min-width: $phone;
+    margin: 0 auto;
     @media(min-width: $tablet){
         padding: 0 38px;
     }
@@ -25,9 +26,7 @@ body{
  .unit {
         padding: 0 1% 1% 1% ;
         border: 1px solid #e5e5e5;
-        position: relative;
         margin-bottom: 40px;
-        box-shadow: none;
         transition: box-shadow .5s;
         &:hover{
             box-shadow: 0 0 3px 0px rgba(0,0,0,0.6);
@@ -36,6 +35,32 @@ body{
         .unit-img {
             border: 1px solid #e5e5e5;
             margin: -20px auto 0;
+            position: relative;
+            .unit-status {
+            position: absolute;
+            top: 35%;
+            left: 0;
+            right: 0;
+             @media (min-width: $tablet){
+                top: 40%;
+            }
+            div {
+                position: absolute;
+                background: #ec1111;
+                color: #fff;
+                font-size: 13px;
+                text-transform: uppercase;
+                text-align: center;
+                padding: 10px 0;
+                width: 65px;
+                &:first-child {left: 0;}
+                &:last-child{
+                    right: 0;
+                    background: #000;
+                }
+            }
+
+        }
         }
         .unit-name {
             font-size: 14px;
@@ -90,38 +115,7 @@ body{
 
             }
         }
-        .unit-status {
-            position: absolute;
-            top: 30%;
-            left: 1.2%;
-            right: 1.2%;
-            @media (min-width: $tablet){
-                top: 18%;
-                left: 2.4%;
-                right: 2.4%;
-            }
-            @media (min-width: $desktop){
-                top: 15%;
-                left: 4.6%;
-                right: 4.6%;
-            }
-            div {
-                position: absolute;
-                background: #ec1111;
-                color: #fff;
-                font-size: 13px;
-                text-transform: uppercase;
-                text-align: center;
-                padding: 10px 0;
-                width: 65px;
-                &:first-child {left: 0;}
-                &:last-child{
-                    right: 0;
-                    background: #000;
-                }
-            }
-
-        }
+        
        
     @media(min-width: $tablet){
        float: left;
@@ -142,15 +136,16 @@ body{
 }
 
  button {
-  background: #89e5cf;
-    padding: 20px 0;
-    border-radius: 129px;
+    border: 1px solid #e5e5e5;
+    padding: 15px 0;
     display: block;
     margin: 0 auto;
-    width: 280px;
-    border: 0;
-    font-size: 18px;
-    font-weight: bold;
+    width: 120px;
+    color: #ec1111;
+    font-family: "Myriad Pro";
+    font-size: 13px;
+    text-align: center;
     text-transform: uppercase;
     outline: none;
+    background: none;
 } 
